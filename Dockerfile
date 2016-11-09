@@ -8,4 +8,6 @@ COPY playbook.yml playbook.yml
 RUN ansible-playbook playbook.yml
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "-c", "--"]
-CMD ["/usr/local/bin/supervisord", "-c", "/etc/supervisor/supervisor.conf"]
+
+COPY boot.sh /usr/local/bin/boot.sh
+CMD ["/usr/local/bin/boot.sh"]
