@@ -5,4 +5,4 @@ for i in $(ls /etc/supervisor/profile.d/*.sh | sort) ; do
     fi
 done
 
-/usr/local/bin/supervisord -c /etc/supervisor/supervisor.conf
+/usr/local/bin/supervisord -c /etc/supervisor/supervisord.conf
