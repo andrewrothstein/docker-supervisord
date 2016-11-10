@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-if [-d /etc/supervisor/profile.d]; then
-    for i in $(ls /etc/supervisor/profile.d/*.sh | sort) ; do
-	if [ -r "$i" ]; then
-	    . $i
-	fi
-    done
-fi
+for i in $(ls /etc/supervisor/profile.d/*.sh | sort) ; do
+    if [ -r "$i" ]; then
+	. $i
+    fi
+done
 
 /usr/local/bin/supervisord -c /etc/supervisor/supervisor.conf

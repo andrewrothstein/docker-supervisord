@@ -4,4 +4,4 @@
 - src: spk83.dumb-init
   version: v1.0.0
 - src: andrewrothstein.supervisord
-  version: v1.0.5
+  version: v1.0.6
