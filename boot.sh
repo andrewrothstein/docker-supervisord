@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-for i in $(ls /etc/supervisor/profile.d/*.sh | sort) ; do
+for i in $(ls /etc/supervisor/profile.d/*.sh 2>/dev/null | sort) ; do
     if [ -r "$i" ]; then
 	. $i
     fi
