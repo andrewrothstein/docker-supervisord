@@ -10,4 +10,4 @@ RUN ansible-playbook playbook.yml
 ENTRYPOINT ["/usr/local/bin/dumb-init", "-c", "--"]
 
 COPY boot.sh /usr/local/bin/boot.sh
-CMD ["/usr/local/bin/boot.sh"]
+CMD ["bash", "-l", "-c", "/usr/local/bin/boot.sh"]
