@@ -1,4 +1,4 @@
-FROM andrewrothstein/docker-ansible:ubuntu_xenial
+FROM andrewrothstein/docker-ansible:centos_7
 MAINTAINER "Andrew Rothstein" andrew.rothstein@gmail.com
 
 COPY requirements.yml requirements.yml
@@ -8,6 +8,4 @@ COPY playbook.yml playbook.yml
 RUN ansible-playbook playbook.yml
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "-c", "--"]
-
-COPY boot.sh /usr/local/bin/boot.sh
-CMD ["bash", "-l", "-c", "/usr/local/bin/boot.sh"]
+CMD ["sh", "-l", "-c", "/usr/local/bin/boot-supervisord.sh"]
