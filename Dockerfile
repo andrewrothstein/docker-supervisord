@@ -1,4 +1,4 @@
-FROM andrewrothstein/docker-ansible:centos_7
+FROM andrewrothstein/docker-ansible:ubuntu_xenial
 MAINTAINER "Andrew Rothstein" andrew.rothstein@gmail.com
 
 COPY requirements.yml requirements.yml
