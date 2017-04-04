@@ -29,7 +29,7 @@ test:
               - >-
                 dcb
                 --snippetsdir .
-                --snippets from.j2 ansible-playbook.j2 snippet.j2
+                --snippet from.j2 ansible-playbook.j2 snippet.j2
                 --upstreamgroup andrewrothstein
                 --upstreamapp docker-ansible
                 --write ${OS}
