@@ -1,6 +1,4 @@
 ---
 - hosts: localhost
   roles:
-    - andrewrothstein.pkg-upgrade
-    - spk83.dumb-init
     - andrewrothstein.supervisord
