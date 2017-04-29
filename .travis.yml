@@ -39,7 +39,7 @@ script:
     --snippetsdir .
     --snippet from.j2 ansible-playbook.j2 cmd.j2
     --upstreamgroup andrewrothstein
-    --upstreamapp docker-ansible
+    --upstreamapp docker-dumb-init
     --pull ${OS}
     --write ${OS}
     --build ${OS}
