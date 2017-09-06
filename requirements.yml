@@ -1,4 +1,4 @@
 ---
 - src: andrewrothstein.pkg-upgrade
 - src: andrewrothstein.supervisord
-  version: v1.0.14
+  version: v1.0.17
